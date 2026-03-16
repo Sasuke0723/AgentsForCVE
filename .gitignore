@@ -1,0 +1,18 @@
+# 忽略日志文件
+*.log
+
+# 忽略环境变量文件
+.env
+.env.local
+
+# 忽略构建产物
+dist/
+build/
+
+# 忽略 IDE 配置文件
+.idea/
+.vscode/
+
+AGENTS.md
+PROJECT_STATUS.md
+app/__pycache__/
