@@ -1,3 +1,4 @@
+# 计划功能：定义项目运行、编排、模型调用、工具执行与测试所需的最小 Python 依赖集合。
 langchain>=1.0.0
 langgraph>=0.2.0
 pydantic>=2.7.0
