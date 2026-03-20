@@ -20,6 +20,7 @@ def verify_node(state):
 
     return {
         "verify": verify,
+        "current_stage": "success" if final_status == "success" else "failed",
         "stage_history": history,
         "final_status": final_status,
         "last_error": None if final_status == "success" else verify.reason,

@@ -1,6 +1,7 @@
 """计划功能：定义漏洞知识结构，作为 knowledge 阶段输出及 build/poc/verify 阶段的统一输入。"""
-from pydantic import BaseModel, Field
 from typing import List, Optional
+
+from app.compat import BaseModel, Field
 
 
 class KnowledgeModel(BaseModel):

@@ -1,6 +1,7 @@
 """计划功能：定义构建阶段产物结构，记录 Dockerfile、构建脚本、构建命令和构建结果。"""
-from pydantic import BaseModel, Field
 from typing import List, Optional
+
+from app.compat import BaseModel, Field
 
 
 class BuildArtifact(BaseModel):

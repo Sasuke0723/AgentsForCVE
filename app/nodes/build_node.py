@@ -14,6 +14,7 @@ def build_node(state):
         history.append({"stage": "build", "status": "success"})
         return {
             "build": build,
+            "current_stage": "poc",
             "stage_history": history,
             "last_error": None,
         }
@@ -22,6 +23,7 @@ def build_node(state):
         history.append({"stage": "build", "status": "failed", "error": str(e)})
         return {
             "retry_count": retry_count,
+            "current_stage": "build",
             "stage_history": history,
             "last_error": str(e),
         }

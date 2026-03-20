@@ -1,6 +1,7 @@
 """计划功能：定义可持久化的运行时状态模型，便于保存任务阶段进度、错误和工作区信息。"""
-from pydantic import BaseModel, Field
 from typing import Dict, List, Optional
+
+from app.compat import BaseModel, Field
 
 
 class RuntimeState(BaseModel):

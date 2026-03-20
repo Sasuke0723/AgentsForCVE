@@ -1,6 +1,7 @@
 """计划功能：定义验证阶段输出结构，描述漏洞在修复前后是否可触发以及最终判定理由。"""
-from pydantic import BaseModel, Field
 from typing import List
+
+from app.compat import BaseModel, Field
 
 
 class VerifyResult(BaseModel):

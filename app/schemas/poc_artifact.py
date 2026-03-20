@@ -1,6 +1,7 @@
 """计划功能：定义 PoC 阶段产物结构，记录复现代码、运行脚本、输入文件与执行结果。"""
-from pydantic import BaseModel, Field
 from typing import List
+
+from app.compat import BaseModel, Field
 
 
 class PoCArtifact(BaseModel):

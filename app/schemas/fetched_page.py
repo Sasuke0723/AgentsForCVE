@@ -1,6 +1,7 @@
 """计划功能：定义网页抓取结果结构，保存原始页面内容和可继续跟踪的外链信息。"""
-from pydantic import BaseModel
 from typing import List
+
+from app.compat import BaseModel
 
 
 class FetchedPage(BaseModel):

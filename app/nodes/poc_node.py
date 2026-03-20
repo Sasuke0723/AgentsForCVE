@@ -19,6 +19,7 @@ def poc_node(state):
         history.append({"stage": "poc", "status": "success"})
         return {
             "poc": poc,
+            "current_stage": "verify",
             "stage_history": history,
             "last_error": None,
         }
@@ -27,6 +28,7 @@ def poc_node(state):
         history.append({"stage": "poc", "status": "failed", "error": str(e)})
         return {
             "retry_count": retry_count,
+            "current_stage": "poc",
             "stage_history": history,
             "last_error": str(e),
         }

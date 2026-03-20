@@ -1,1 +1,9 @@
 {# 计划功能：Dockerfile 模板，用于生成可构建漏洞目标项目的最小运行环境。 #}
+FROM python:3.11-slim
+
+WORKDIR /workspace
+
+RUN apt-get update && apt-get install -y {{ packages }} && rm -rf /var/lib/apt/lists/*
+
+COPY build/build.sh /workspace/build.sh
+RUN chmod +x /workspace/build.sh

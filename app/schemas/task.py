@@ -1,6 +1,7 @@
 """计划功能：定义任务输入结构，承载单个 CVE 任务的基础信息、仓库信息和参考链接。"""
-from pydantic import BaseModel, Field
 from typing import List, Optional
+
+from app.compat import BaseModel, Field
 
 
 class TaskModel(BaseModel):

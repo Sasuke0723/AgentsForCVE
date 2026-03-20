@@ -1,0 +1,13 @@
+{
+  "task_id": "demo-cve-0001",
+  "cve_id": "CVE-2099-0001",
+  "cve_url": "https://example.com/cve/CVE-2099-0001",
+  "repo_url": "https://github.com/example/mock-vuln-project",
+  "vulnerable_ref": "v1.0.0",
+  "fixed_ref": "v1.0.1",
+  "language": "C",
+  "references": [
+    "https://example.com/advisories/CVE-2099-0001",
+    "https://github.com/example/mock-vuln-project/commit/fix-cve-2099-0001"
+  ]
+}
